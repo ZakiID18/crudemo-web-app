@@ -11,15 +11,18 @@
 </head>
 
 <body>
+
+	<h1 align="center">
+		Students List
+	</h1>	
 	
+	<br><br>
 	<!-- align="center" || @ is reference content path of your (root) app -->
 	<div class="container my-2">
 		
-		<h1>Students List</h1>
-		
 		<a th:href="@{/showNewStudentForm}" class="btn btn-primary btn-sm mb-3">Add Student</a>
 		<table border="1" class="table table-striped table-responsive-md">
-			<thead>
+			<thead align="center">
 				<!-- /page/1?sortField=name&sortDir=asc -->
 				<tr>
 					<th>
@@ -45,7 +48,7 @@
 					<th>Actions</th>
 				</tr>
 			</thead>
-			<tbody>
+			<tbody align="center">
 				<!-- Thmyeleaf directives -->
 				<tr th:each="student : ${listStudents}">
 					<td th:text="${student.nim}"></td>
